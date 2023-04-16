@@ -1,0 +1,431 @@
+body{
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+}
+
+/* img css */
+.nav_img{
+    border: 0.2rem solid gold;
+    border-bottom-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    
+}
+.nav{
+    /* border: 0.2rem solid gold; */
+    border-bottom-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+}
+
+/* userimg */
+.user_img{
+    width: 3.5rem;
+    height: 3.5rem;
+    /* background-color: rgb(41, 9, 9); */
+    background-image: url(imag_9.jpg);
+    /* border: 0.4rem solid rgb(241, 235, 235); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    position: relative;
+    left: 82rem;
+    bottom: 8.6rem;
+}
+.container{
+    width: 10rem;
+    height: 10rem;
+    /* background-color: red; */
+    background-image: url(nitp.png.jpg);
+    background-size: contain;
+    /* background-size: contain; */
+    background-position-x: ;
+    background-repeat: no-repeat;
+    border: 0rem solid red;
+    border-radius: 100px;
+    position: relative;
+    left: 41rem;
+    bottom: 6.5rem;
+    height: 5rem;
+    width: 5rem;
+    z-index: 100;
+    /* top: 3rem; */
+}
+
+
+/* .container1{
+    height: 5rem;
+    width: 60rem;
+    background-color: red;
+    border: 0.3rem solid red;
+    position: absolute;
+    top: 2rem;
+    right: 29.6rem;
+    z-index: 50;
+    border-bottom-right-radius: 2rem;
+    border-top-right-radius: -2rem;
+    background-image: url(mess_nav\ 2.jpg);
+    /* background-position-x: 77rem; */
+    /* background-repeat: no-repeat; */
+    /* background-size: contain; */
+    /* background-position-y: 3rem; */
+    
+} */
+/* .container2{
+    height: 2rem;
+    width: 90rem;
+    background-color: red;
+} */
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  max-height: 900px;
+  position:relative;
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position:fixed;
+  top: 50%;
+  width: auto;
+  margin-top: 38px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/5 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display:inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name:fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* ----------------------------------------nav-------------------------------------- */
+
+/*Navigation tabs
+/* Create a top navigation bar with a white background color  */
+.topnav button{
+    background-color: white;
+    overflow:hidden;
+    position:relative;
+    bottom: 11.6rem;
+    left: 19rem;
+    margin: 0rem 1rem;
+    
+    
+}
+
+.topnav{
+    display: flex !important;
+    flex-direction: row !important;
+}
+  
+/* Style the links inside the navigation bar */
+.topnav a{
+    float:left;
+    color: rgb(133, 33, 82);
+    text-align: left;
+    padding: 15px 65px;
+    text-decoration:none;
+    font-size: 17px;
+    font-style:normal;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+  
+/* Change the color of links on hover */
+.topnav button:hover {
+    background-color: rgba(242, 235, 235, 0.836);
+    color: black;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+  
+/* Create a right-aligned (split) link inside the navigation bar */
+/* .topnav a{
+    float:right;
+    background-color: #eff6f3;
+    color: rgb(133, 33, 82);
+    position:relative;
+    margin-right: 200px;
+    padding: 15px 65px;
+    
+} */
+.topnav button:hover{
+    /* background-color: rgba(242, 235, 235, 0.836); */
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+    color:black;
+}
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f5f0ef;
+    border: none;
+    color: rgb(133, 33, 82);
+    text-align: center;
+    font-size: 18px;
+    padding: 7px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -10px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+/* ----------------------Leave------------------------------ */
+.button_leave{
+    background-color: rgb(214, 42, 42); /* Green */
+    color: white;
+    font-size: 20px;
+    border:none;
+    padding-bottom:1px;
+    margin-top: -120px;
+    margin-left:  600px;;
+    border-radius: 0.8rem;
+    height: 40px;
+    width: 100px;
+    padding-top:2px;
+    position: relative;
+    bottom: 3rem;
+}
+.button_leave:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.leave_box{
+    box-shadow: 40px;
+    border-radius: 2rem;
+    margin-top: 20px;
+    background-image: linear-gradient(-180deg, rgba(223, 25, 25, 0.91), rgba(233, 198, 215, 0.2));
+    position: relative;
+    bottom: 21rem;
+}
+.place1{
+    padding-top: 0px;
+    padding-bottom: 4px;
+    position: relative;
+    bottom: 4rem;
+    z-index: 9;
+    width: 20rem;
+    
+}
+.place2{
+    padding-top: 2px;
+    position: relative;
+    bottom: 6rem;
+    width: 20rem;
+    z-index: inherit;
+    
+}
+/* motion text */
+.motion{
+    position: relative;
+    bottom: 10rem;
+}
+
+
+/*--------------Side Navigation Bar-----------------------*/
+#mySidenav a {
+    position: absolute;
+    left: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    
+    margin-top: 400px;
+}
+  
+#mySidenav a:hover {
+    left: 0;
+  }
+  
+#about {
+    top: 20px;
+    background-image: linear-gradient(-180deg, rgba(229, 13, 13, 0.91), rgba(252, 252, 252, 0.2));
+  }
+  
+#blog {
+    top: 80px;
+    background-image: linear-gradient(-180deg, rgba(6, 66, 41, 0.91), rgba(241, 234, 238, 0.2));
+  }
+  
+#projects {
+    top: 140px;
+    background-image: linear-gradient(-180deg, rgba(140, 9, 192, 0.91), rgba(249, 245, 247, 0.2));
+  }
+  
+  #contact {
+    top: 200px;
+    background-image: linear-gradient(-180deg, rgba(226, 108, 4, 0.91), rgba(248, 242, 245, 0.2));
+  }
+
+  /*<!-----------------Feedback Page---------------------->*/
+.feedback_box{
+    box-shadow: 40px;
+    border-radius: 2rem;
+    margin-bottom: 100px;
+    background-image: linear-gradient(-180deg, rgba(212, 78, 78, 0.91), rgba(250, 246, 248, 0.948));
+    position:absolute;
+    bottom: 1rem;
+    height:500px;
+    width:900px;
+    margin-left: 150px;
+    
+}
+.feedback_{
+   margin-left: 370px;
+   color:#f5f0ef;
+   font-size: xx-large;
+   border-radius: 2rem;
+   box-shadow: 4rem;
+}
+.feedback_box1{
+    font-family: 'Exo 2', sans-serif;
+    font-size:medium;
+    font-weight: bold;
+    margin-left: 8px;
+    font-weight: bold;
+    
+}
+.feedback_box2{
+    font-family: 'Exo 2', sans-serif;
+    font-size:medium;
+    font-weight: bold;
+    margin-left: 7px;
+    margin-top: 6px;
+    font-weight: bold;
+}
+.feedback_box4{
+    font-family: 'Exo 2', sans-serif;
+    font-size:medium;
+    margin-left: 180px;
+    margin-right: 40px;
+    margin-top:10px;
+}
+.feedback_box5{
+    font-family: 'Exo 2', sans-serif;
+    font-size:medium;
+    margin-left: 100px;
+    margin-right: 40px;
+  }
+.my-4{
+    font-family: 'Exo 2', sans-serif;
+    font-weight:bolder;
+    margin-left: 8px;
+    
+}
+.table{
+    width: 800px;
+}
+
+.btn_delete{
+    margin-left: 800px;
+}
+
+.action{
+    position: relative;
+    right: 60px;
+}
+
+.feedback_img{
+    width: 7rem;
+    height: 7rem;
+    background-color: red;
+    position: relative;
+    bottom: 17rem;
+    left: 47rem;
+    background-image: url(img_10.jpeg);
+    background-size: contain;
+    border-radius: 4rem;
+    /* background-position-y: 0.2rem; */
+}
+
