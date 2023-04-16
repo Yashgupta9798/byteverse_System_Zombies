@@ -16,7 +16,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Anuphan&display=swap" rel="stylesheet">
     <style>
         body{
-            background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(236, 40, 40));
+            /* background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(140, 33, 176)); */
         }
         .leave{
             position: relative;
@@ -26,29 +26,36 @@
 <body><div style="display:flex;  ">
     <!-- <div class="container2"></div>
     <div class="container1"></div> -->
-    <img src="mess_nav2.jpg" alt="error" class="nav" height="100px" width="1425px;" ></div>
-    <div class="container"></div>
-    <div class="user_img"></div>
-
-<!--Navigation Tab-->
-<div class="topnav">
+    <img src="mess_nav 2.jpg" alt="error" class="nav" height="100px" width="1425px;">
+  </div>
+  <div class="container"></div>
+  <div class="user_img"></div>
+  <!--Navigation Tab-->
+  <div class="topnav">
     <!--Home tab-->
     <div>
-        <button class="button" style="vertical-align:middle;"><span>Home</span></button></div>
-        <!--Profile Tab-->
+      <button class="button" style="vertical-align:middle;"><span onclick="goto1()">Home</span></button>
+    </div>
+    <!--Menu Tab-->
     <div>
-        <button class="button" style="vertical-align:middle"><span>Profile</span></button></div>
-        <!--Menu Tab-->
+      <button class="button" style="vertical-align:middle"><span onclick="goto2()">Menu</span></button>
+    </div>
+    <!--Booking Tab-->
     <div>
-        <button class="button" style="vertical-align:middle"><span>Menu</span></button></div>
-        <!--Booking Tab-->
+      <button class="button" style="vertical-align:middle"><span onclick="goto3()">Booking</span></button>
+    </div>
+    <!--Leave Tab-->
     <div>
-        <button class="button" style="vertical-align:middle"><span>Booking</span></button></div>
-        <!--Contact Tab-->
-    <div><button class="button" style="vertical-align:middle"><span>Contact</span></div>
-  </div></div>
+      <button class="button" style="vertical-align:middle"><span onclick="goto4()">Leave</span></button>
+    </div>
+    <!--Contact Tab-->
+    <div><button class="button" style="vertical-align:middle"><span onclick="goto()">About</span></div>
+  </div>
+  </div>
     
-  <marquee style="font-size: x-large;font-style: oblique;color:rgb(48, 45, 45);background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(230,40,45,1));margin-bottom: 7rem;height: 37px;" class="motion">‼️Please mention dates correctly otherwise you will find difficulty in selecting food for the specified interval‼️</marquee>
+  <!-- <marquee style="font-size: x-large;font-style: oblique;color:rgb(48, 45, 45);background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(226, 198, 199));margin-bottom: 7rem;height: 37px;" class="motion">‼️Please mention dates correctly otherwise you will find difficulty in selecting food for the specified interval‼️</marquee> -->
+  <marquee style="font-size: x-large;font-style: oblique;color:rgb(48, 45, 45);background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(231, 230, 243,0.3) 20%, rgba(111, 185, 231, 0.9) 35%, rgba(255, 255, 255,0.3) 100%);margin-bottom: 7rem;height: 37px;" class="motion">‼️Please mention dates correctly otherwise you will find difficulty in selecting food for the specified interval‼️</marquee>
     
     <div class="leave_box"style="box-sizing: border-box;background-color: aliceblue;justify-content: center;margin-top:150px ;margin-right: 300px;margin-left: 300px;height: 500px;">
     <div ><h1 style="font-size:xx-large;font-weight: bold;margin-left: 230px;padding-top: 25px;font-family: 'Montserrat', sans-serif;">Specify Leave Details</h1> 
@@ -68,8 +75,31 @@
             min="1997-01-01" max="2030-12-31" style="margin-left:90px;width: 200px;height: 40px;"></div>  
         <div><textarea name="Description" placeholder="Describe your reason of absence"style="border:2px; margin-left: 500px;margin-bottom: 100px;margin-top: -600px;width:300px;height:230px;border-radius: 1rem;">  Description</textarea></div>    
             
-    <div><button class="button_leave">Submit</button></div></div>
+    <div><button class="button_leave" onclick="give_alert_leave()">Submit</button></div></div>
+    <script>
+        function give_alert_leave(){
+            alert("Your response has been submitted")
+        }
+    </script>
+    <script>
+        function goto() {
+          window.location.href = "#about_us";
+        }
     
+        function goto1() {
+          window.location.href = "mess_1.html";
+        }
+        
+        function goto2() {
+          window.location.href = "hamberger.html";
+        }
+        function goto3() {
+          window.location.href = "booking_2.html";
+        }
+        function goto4() {
+          window.location.href = "leave.html";
+        }
+      </script>
     
 </body>
 </html>

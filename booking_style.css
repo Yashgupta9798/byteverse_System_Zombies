@@ -1,0 +1,130 @@
+
+.back2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   margin: 100px 100px 396px 396px;
+}
+body{
+    background-color: #FA8BFF;
+    background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+    height:90px;
+}
+
+#ss{
+    margin: -17px -493px 405px 371px;
+    padding: 23px 10px;
+    /* border: 2px solid red; */
+
+}
+
+#ps{
+    margin: -98px -499px 477px 364px;
+    padding: 23px 10px;
+} */
+
+.container10 {
+    /* background-color: lightblue; */
+    background: rgb(51, 176, 195);
+    background: linear-gradient(90deg, rgba(51, 176, 195, 1) 4%, rgba(18, 236, 143, 1) 44%, rgba(23, 201, 209, 1) 100%);
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.container12 {
+    height: 12rem;
+    border: 0.002rem solid red;
+    border-radius: 0.3rem;
+    width: 25rem;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+    font-size: 2.5rem;
+    font-family: poppins-bold;
+    color: white;
+    /* margin: 2rem; */
+    margin: auto;
+    margin-bottom: 2rem;
+    box-shadow: 0.5rem 0.5rem 0.4rem green;
+    /* text-shadow: 0.1rem 0.1rem yellow; */
+    text-align: center;
+    padding-top: 2rem;
+}
+
+
+.container12:hover {
+    height: 15rem;
+    border: 0.002rem solid red;
+    border-radius: 0.3rem;
+    width: 25rem;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+    font-size: 2.5rem;
+    font-family: poppins-bold;
+    color: white;
+    /* margin: 2rem; */
+    margin: auto;
+    margin-bottom: 2rem;
+    box-shadow: 0.5rem 0.5rem 0.4rem rgba(4, 81, 4, 5);
+    transform: scale(1.05);
+    /* color: rgb(4, 81, 4); */
+    transition: 1.5s;
+    /* text-shadow: 0.1rem 0.1rem yellow; */
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.skillsection {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 1.2rem;
+}
+
+.skillheading {
+    text-align: center;
+    font-size: 3rem;
+    font-family: poppins-bold;
+    background: #ff6e7f;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #bfe9ff, #ff6e7f);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #bfe9ff, #ff6e7f);
+    color: rgb(210, 247, 200);
+    /* color: #aee80d; */
+    /* background-image: url(https://th.bing.com/th/id/OIP.9SYnV3Ta-OOontiYIXhp4gAAAA?pid=ImgDet&w=313&h=209&rs=1); */
+    background-image: url(fav.webp);
+    position: relative;
+    bottom: 3rem;
+}
+
+.container13{
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: #e33809;
+    background-color: whitesmoke;
+    width: 12rem;
+    opacity: 70%;
+    border-radius: 2rem;
+    padding-left: 2rem;
+}
+
+.last_payment{
+    position:relative;
+    left: 74rem;
+    bottom: 6.5rem;
+    background-color: rgb(16, 222, 222);
+    width: 16rem;
+    font-size: 2rem;
+    color: #4158D0;
+    border-radius: 2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.2rem;
+    
+}
+
+body{
+    background-image: url(yash.jpg);
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skills</title>
+    <link rel="stylesheet" href="booking_style.css">
+
+    <link rel="stylesheet" media="screen and (min-width:805px) and (max-width:1194px)" href="static/phone6.css">
+
+    <link rel="stylesheet" media="screen and (max-width:805px)" href="static/phone7.css">
+</head>
+
+<body>
+    
+    <div class="container13">
+        <label for="myHostel">Hostel Name:</label>
+        <br>
+        <select name="Hostel" id="myHostel">
+            <option value="sn1">Sone-A</option>
+            <option value="sn2">Sone-B</option>
+            <option value="Gn">Ganga</option>
+            <option value="bh">Brahmaputra</option>
+            <option value="ks">Kosi</option>
+        </select>
+    </div>
+
+    <div class="last_payment">
+        <p class="payment">Your Last Payment Amount: Rs.20,000</p>
+    </div>
+    <div class="container10">
+        <h2 class="skillheading">STUDENT'S SECTION</h2>
+        <div class="skillsection">
+            <div class="container12">BREAKFAST
+                <br>
+                <br>
+                <input type="checkbox" name="REGULAR" id="regular">Regular
+                <br>
+                <input type="checkbox" name="COUPON" id="coupon" onclick="mycoupon1()">Coupon
+            </div>
+            <div class="container12">LUNCH
+                <br>
+                <br>
+                <input type="checkbox" name="REGULAR" id="regular">Regular
+                <br>
+                <input type="checkbox" name="COUPON" id="coupon" onclick="mycoupon2()">Coupon
+            </div>
+            <div class="container12">DINNER
+                <br>
+                <br>
+                <input type="checkbox" name="REGULAR" id="regular">Regular
+                <br>
+                <input type="checkbox" name="COUPON" id="coupon" onclick="mycoupon3()">Coupon
+            </div>
+        </div>
+    </div>
+    <hr>
+    <br>
+    <div class="container10">
+        <h2 class="skillheading">PARENT'S SECTION</h2>
+        <div class="skillsection">
+            <div class="container12">BREAKFAST
+                <br>
+                <br>
+                <input type="checkbox" name="REGULAR" id="regular">Regular
+                <br>
+                <input type="checkbox" name="COUPON" id="coupon" onclick="mycoupon1()">Coupon
+            </div>
+            <div class="container12">LUNCH
+                <br>
+                <br>
+                <input type="checkbox" name="REGULAR" id="regular">Regular
+                <br>
+                <input type="checkbox" name="COUPON" id="coupon" onclick="mycoupon2()">Coupon
+            </div>
+            <div class="container12">DINNER
+                <br>
+                <br>
+                <input type="checkbox" name="REGULAR" id="regular">Regular
+                <br>
+                <input type="checkbox" name="COUPON" id="coupon" onclick="mycoupon3()">Coupon
+            </div>
+        </div>
+    </div>
+    <script>
+        function mycoupon1(){
+            alert(`you have selected a item of RS. 15`)
+        }
+        function mycoupon2(){
+            alert(`you have selected a item of RS. 40`)
+        }
+        function mycoupon3(){
+            alert(`you have selected a item of RS. 50`)
+        }
+    </script>
+</body>
+
+</html>

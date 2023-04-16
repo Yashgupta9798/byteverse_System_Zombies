@@ -1,5 +1,5 @@
 body{
-    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+    background-image:url(main_bg.jpg);
 }
 
 /* img css */
@@ -20,7 +20,7 @@ body{
     width: 3.5rem;
     height: 3.5rem;
     /* background-color: rgb(41, 9, 9); */
-    background-image: url(imag_9.jpg);
+    background-image: url(img_9.avif);
     /* border: 0.4rem solid rgb(241, 235, 235); */
     background-size: contain;
     background-repeat: no-repeat;
@@ -33,7 +33,7 @@ body{
     width: 10rem;
     height: 10rem;
     /* background-color: red; */
-    background-image: url(nitp.png.jpg);
+    background-image: url(nitp.png);
     background-size: contain;
     /* background-size: contain; */
     background-position-x: ;
@@ -79,7 +79,7 @@ body{
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
-  max-height: 900px;
+  max-height: 550px;
   position:relative;
   margin: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -93,7 +93,7 @@ body{
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
-  position:fixed;
+  position:relative;
   top: 50%;
   width: auto;
   margin-top: 38px;
@@ -105,16 +105,24 @@ body{
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-
+.prev{
+    position: relative;
+    bottom: 17rem;
+    right: 4.6rem;
+    color: black;
+}
 /* Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+    position: relative;
+    bottom: 17rem;
+    right: -990px;
+    border-radius: 3px 0 0 3px;
+    color:black
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(196, 190, 190, 0.8);
 }
 
 /* Caption text */
@@ -214,7 +222,7 @@ body{
 } */
 .topnav button:hover{
     /* background-color: rgba(242, 235, 235, 0.836); */
-    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+    background-image: linear-gradient(to right, rgb(148, 22, 198), rgb(238, 234, 234));
     color:black;
 }
 .button {
@@ -260,7 +268,7 @@ body{
 
 /* ----------------------Leave------------------------------ */
 .button_leave{
-    background-color: rgb(214, 42, 42); /* Green */
+    background-color: rgb(97, 7, 132); /* Green */
     color: white;
     font-size: 20px;
     border:none;
@@ -281,9 +289,10 @@ body{
     box-shadow: 40px;
     border-radius: 2rem;
     margin-top: 20px;
-    background-image: linear-gradient(-180deg, rgba(223, 25, 25, 0.91), rgba(233, 198, 215, 0.2));
+    background-image: linear-gradient(-180deg, rgba(136, 42, 140, 0.91), rgba(241, 234, 237, 0.2));
     position: relative;
     bottom: 21rem;
+    opacity: 90%;
 }
 .place1{
     padding-top: 0px;
@@ -347,13 +356,87 @@ body{
     top: 200px;
     background-image: linear-gradient(-180deg, rgba(226, 108, 4, 0.91), rgba(248, 242, 245, 0.2));
   }
+  /*<!-------------------------------Footer------------------------------------->*/
+  @import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:300);
+
+body {
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+/* Sticky footer position and size
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 300px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 100px;
+}
+
+/* Taller footer on small screens */
+@media (max-width: 567em) {
+    body {
+      margin-bottom: 500px;
+    }
+    .footer {
+      height: 100px;
+    }
+}
+
+/* Sticky footer style and color
+-------------------------------------------------- */
+.web_name{
+    color:white;
+    font-size: x-large;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'Anuphan', sans-serif;
+}
+footer {
+  padding-top: 0px;
+  background-color: #0c0c0c;
+  color: rgb(5, 5, 5);
+  right:0.5rem;
+  width:1470px;
+  
+}
+
+footer a {
+  color: rgb(116, 113, 113);
+  text-decoration:none;
+}
+
+footer a:hover, footer a:focus {
+  color: rgb(249, 246, 246);
+  text-decoration:none;
+  border-bottom:1px dotted #999;
+}
+
+
+.container_foot{
+    background-color: #0c0b0b;
+    padding-top: 0px;
+    padding-left:0px;
+    position: relative;
+    right: 0.5rem;
+    width: 1465px;
+}
+
 
   /*<!-----------------Feedback Page---------------------->*/
 .feedback_box{
     box-shadow: 40px;
     border-radius: 2rem;
     margin-bottom: 100px;
-    background-image: linear-gradient(-180deg, rgba(212, 78, 78, 0.91), rgba(250, 246, 248, 0.948));
+    background-image: linear-gradient(-180deg, rgba(157, 50, 228, 0.91), rgba(250, 246, 248, 0.948));
     position:absolute;
     bottom: 1rem;
     height:500px;
@@ -429,3 +512,19 @@ body{
     /* background-position-y: 0.2rem; */
 }
 
+/*<!--About us------------>*/
+.about_us{
+    color: white;
+    font-weight: bold;
+    font-size: xxx-large;
+}
+.para{
+    opacity:100%;
+    padding-left: 5px;
+    color:aliceblue;
+    font-size: x-large;
+    font-family: 'Mukta', sans-serif;
+}
+.para_box{
+    opacity:;
+}

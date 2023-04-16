@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anuphan&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <div style="display:flex;  ">
+    <!-- <div class="container2"></div>
+    <div class="container1"></div> -->
+    <img src="mess_nav 2.jpg" alt="error" class="nav" height="100px" width="1425px;">
+  </div>
+  <div class="container"></div>
+  <div class="user_img"></div>
+  <!--Navigation Tab-->
+  <div class="topnav">
+    <!--Home tab-->
+    <div>
+      <button class="button" style="vertical-align:middle;"><span onclick="goto1()">Home</span></button>
+    </div>
+    <!--Menu Tab-->
+    <div>
+      <button class="button" style="vertical-align:middle"><span onclick="goto2()">Menu</span></button>
+    </div>
+    <!--Booking Tab-->
+    <div>
+      <button class="button" style="vertical-align:middle"><span onclick="goto3()">Booking</span></button>
+    </div>
+    <!--Leave Tab-->
+    <div>
+      <button class="button" style="vertical-align:middle"><span onclick="goto4()">Leave</span></button>
+    </div>
+    <!--Contact Tab-->
+    <div><button class="button" style="vertical-align:middle"><span onclick="goto()">About</span></div>
+  </div>
+  </div>
+  <!-----------------------------Side Hover Button-------------->
+
+
+  <div id="mySidenav" class="sidenav">
+    <a href="#" id="about" onclick="goto7()"">Feedback</a>
+    <a href="https://twitter.com/NITPatna1?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" id="blog">Social</a>
+    <a href="#iframe_official" id="projects" style="scroll-behavior: smooth;">Official</a>
+    <a href="#footer" id="contact">Contact</a>
+  </div>
+
+  <!-- Slideshow container -->
+
+  <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 5</div>
+      <img src="img_3.jpg" style="width:100%; border-radius: 10px;max-width: 100%;height: auto;">
+      <!-- <div class="text"></div> -->
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 5</div>
+      <img src="img_2.jpg" style="width:100%;border-radius: 10px;">
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 5</div>
+      <img src="img_8.jpeg" style="width:100%;border-radius: 10px;">
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 5</div>
+      <img src="img_5.jpeg" style="width:100%;border-radius: 10px;">
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">5/ 5</div>
+      <img src="image_6.jpeg" style="width:100%;border-radius: 10px;">
+      <div class="text"></div>
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+  </div>
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+  <div style="display:flex;flex-direction: row; margin-top: 100px;">
+    <div class="about_us">
+      <pre style="font-family: 'Rubik', sans-serif;">  Now you can<pre> C H O O S E 
+        your    <p style="color: rebeccapurple;">           meal</p> online...
+        </pre>
+      </pre>
+    </div>
+
+    <div class="para_box"
+      style="box-sizing: border-box;background-image: linear-gradient(-180deg, rgba(175, 108, 220, 0.91), rgba(184, 145, 164, 0.948));width:700px;height: 500px;margin-top: 80px;margin-left: 120px; border-radius: 2rem;box-shadow: 2rem;">
+      <h3 class="about_us" id="about_us">ABOUT US</h3>
+      <p class="para">Heyy! This is MESS DASHBOARD trying to helping you out with messing facilities. We aim to provide
+        you the service by which you can select your meal and extra messing items one day before as per your choice. In
+        addition to that you have the option for parents also to have benefit of this.MESS DASHBOARD also saves your
+        moneyby letting you pay only for those which you have selected.You get option to select your leave days for your
+        monetry benefit and also to save food wastage.You also have the option to give your valuable feedback so that we
+        can improve our service in the future.</p>
+    </div>
+  </div>
+  <iframe id="iframe_official" style="margin-top:15rem ;margin-left: 120px;border-radius: 1rem;box-shadow: 4px;"
+    width="1200" height="600" src="https://www.nitp.ac.in/facilities/?tab=hostel" title="Hostel & Mess || NIT PATNA "
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen></iframe>
+
+
+
+
+  <!-------------------------------Footer--------------------------------------->
+  <footer class="footer" id="footer">
+    <div class="container_foot">
+      <div class="col-md-5">
+        <h5><i class="web_name">
+            <pre>  🍎MESS DASHBOARD</pre>
+          </i></h5>
+        <div class="row">
+
+          <ul class="list">
+            <li><a href="">Adress: Patna, Bihar (800005), India</a></li>
+            <li><a href="">Give us a call on: +91-0612-237 1715 / 237 2715</a></li>
+          </ul>
+        </div>
+        <ul class="nav">
+          <li class="nav-item"><a href="" class="nav-link pl-0">Follow us on facebook<i
+                class="fa fa-facebook fa-lg"></i></a></li>
+          <li class="nav-item"><a href="" class="nav-link">Follow us on twitter<i class="fa fa-twitter fa-lg"></i></a>
+          </li>
+          <li class="nav-item"><a href="" class="nav-link">Follow us on linkedin<i class="fa fa-linkedin fa-lg"></i></a>
+          </li>
+          <li class="nav-item"><a href="" class="nav-link">Follow us on instagram<i
+                class="fa fa-instagram fa-lg"></i></a></li>
+          <li class="nav-item"><a href="" class="nav-link">Email us on: mess_dashboard@gmail.com</a></li>
+        </ul>
+        <br>
+      </div>
+
+    </div>
+    </div>
+
+
+  </footer>
+
+  <script>
+    function goto() {
+      window.location.href = "#about_us";
+    }
+
+    function goto1() {
+      window.location.href = "mess_1.html";
+    }
+    
+    function goto2() {
+      window.location.href = "hamberger.html";
+    }
+    function goto3() {
+      window.location.href = "booking_2.html";
+    }
+    function goto4() {
+      window.location.href = "leave.html";
+    }
+    function goto7() {
+      window.location.href = "feedback.html";
+    }
+  </script>
+</body>
+
+</html>

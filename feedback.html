@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div style="display:flex;  ">
+        <!-- <div class="container2"></div>
+        <div class="container1"></div> -->
+        <img src="mess_nav 2.jpg" alt="error" class="nav" height="100px" width="1425px;">
+      </div>
+      <div class="container"></div>
+      <div class="user_img"></div>
+      <!--Navigation Tab-->
+      <div class="topnav">
+        <!--Home tab-->
+        <div>
+          <button class="button" style="vertical-align:middle;"><span onclick="goto1()">Home</span></button>
+        </div>
+        <!--Menu Tab-->
+        <div>
+          <button class="button" style="vertical-align:middle"><span onclick="goto2()">Menu</span></button>
+        </div>
+        <!--Booking Tab-->
+        <div>
+          <button class="button" style="vertical-align:middle"><span onclick="goto3()">Booking</span></button>
+        </div>
+        <!--Leave Tab-->
+        <div>
+          <button class="button" style="vertical-align:middle"><span onclick="goto4()">Leave</span></button>
+        </div>
+        <!--Contact Tab-->
+        <div><button class="button" style="vertical-align:middle"><span onclick="goto()">About</span></div>
+      </div>
+      </div>
+    <div class="feedback_box" style="box-sizing: border-box; border-color: black;" >
+        <h2 class="feedback_"style="font-family: 'Satisfy', cursive;"  >FEEDBACK</h2>
+         <div >
+                <label class="feedback_box1"for="title">Username</label>
+                <input type="text" class="feedback_box1" id="title" aria-describedby="emailHelp" style="border-radius: 0.5rem;">
+                <small id="emailHelp" class="feedback_box1"></small>
+            </div>
+
+            <div class="feedback_box2">
+                <label for="description">Description</label>
+                <textarea class="feedback_box2" id="description" rows="3" style="border-radius: 1rem;"></textarea>
+            </div>
+            
+
+            <button   id="add" class="feedback_box4" onclick="give_alert()">Submit</button>
+            <button  id="clear" class="feedback_box5" onclick="clearStorage()">Clear</button>
+         
+
+        <div id="reviews" class="my-4">
+            <h2>Reviews By Users</h2>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">SNo</th>
+                    <th scope="col">People</th>
+                    <th scope="col">Reviews</th> 
+                    <th scope="col" class="action">Action</th> 
+                  </tr>
+                </thead>
+                <tbody id="tableBody">
+                  <tr>
+                    <th scope="row">1</th>
+                    <td></td>
+                    <td></td> 
+                    <td id="new"><button class="btn_delete">Delete</button></td> 
+                  </tr>
+                  
+                </tbody>
+              </table>
+        </div>
+        <div class="feedback_img"></div>
+    </div>
+   
+        <script>
+            function give_alert(){
+                alert("Your response has been submitted");
+            }
+            function getAndUpdate(){
+                console.log("Updating List...");
+                tit = document.getElementById('title').value;
+                desc = document.getElementById('description').value;
+                if (localStorage.getItem('itemsJson')==null){
+                    itemJsonArray = [];
+                    itemJsonArray.push([tit, desc]);
+                    localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray))
+                }
+                else{
+                    itemJsonArrayStr = localStorage.getItem('itemsJson')
+                    itemJsonArray = JSON.parse(itemJsonArrayStr);
+                    itemJsonArray.push([tit, desc]);
+                    localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray))
+                }
+                update();
+            }
+
+            function update(){
+                if (localStorage.getItem('itemsJson')==null){
+                    itemJsonArray = []; 
+                    localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray))
+                } 
+                else{
+                    itemJsonArrayStr = localStorage.getItem('itemsJson')
+                    itemJsonArray = JSON.parse(itemJsonArrayStr); 
+                }
+                // Add to the table
+                let tableBody = document.getElementById("tableBody");
+                let str = "";
+                itemJsonArray.forEach((element, index) => {
+                    str += `
+                    <tr>
+                    <th scope="row">${index + 1}</th>
+                    <td>${element[0]}</td>
+                    <td>${element[1]}</td> 
+                    <td><button class="btn btn-sm btn-primary" onclick="deleted(${index})">Delete</button></td> 
+                    </tr>`; 
+                });
+                tableBody.innerHTML = str;
+            }
+            add = document.getElementById("add");
+            add.addEventListener("click", getAndUpdate);
+            update();
+            function deleted(itemIndex){
+                console.log("Delete", itemIndex);
+                itemJsonArrayStr = localStorage.getItem('itemsJson')
+                itemJsonArray = JSON.parse(itemJsonArrayStr);
+                // Delete itemIndex element from the array
+                itemJsonArray.splice(itemIndex, 1);
+                localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray));
+                update();
+
+            }
+            function clearStorage(){
+                if (confirm("Do you areally want to clear?")){
+                console.log('Clearing the storage')
+                localStorage.clear();
+                update()
+                }
+            }
+        </script>
+        <script>
+            function goto() {
+              window.location.href = "#about_us";
+            }
+        
+            function goto1() {
+              window.location.href = "mess_1.html";
+            }
+            
+            function goto2() {
+              window.location.href = "hamberger.html";
+            }
+            function goto3() {
+              window.location.href = "booking_2.html";
+            }
+            function goto4() {
+              window.location.href = "leave.html";
+            }
+          </script>
+</body>
+
+</html>
