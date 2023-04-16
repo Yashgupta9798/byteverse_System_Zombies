@@ -1,0 +1,83 @@
+body{
+    background-image: linear-gradient( 64.5deg,  rgba(245,116,185,1) 14.7%, rgba(89,97,223,1) 88.7% );
+    /* background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); */
+
+
+}
+.signup1{
+    background-image: linear-gradient( 64.5deg,  rgb(167, 159, 249) 14.7%, rgba(89,97,223,1) 100% );
+    /* background-image: linear-gradient(to right, rgba(237, 3, 3, 0.648), rgba(229, 164, 164, 0.675)); */
+
+    /* background-color: red; */
+    /* border: 3px solid blue; */
+    width: 25rem;
+    height: 25rem;
+    /* z-index: 4; */
+    position: relative;
+    top: 4rem;
+    left: 10rem;
+    padding: 3rem;
+    box-shadow: -0.4rem 0.4rem 0.7rem rgba(4, 81, 4, 5);
+}
+
+.signup1:hover{
+    transform: scale(1.05);
+    transition: 1.5s;
+}
+
+.signin1{
+    background-image: linear-gradient( 64.5deg,  rgb(98, 85, 247) 14.7%, rgb(168, 173, 240) 100% );
+    /* background-image: linear-gradient(to right, rgba(237, 235, 235, 0.625), rgba(60, 50, 50, 0.362)); */
+
+    /* background-color: red; */
+    /* border: 3px solid blue; */
+    width: 25rem;
+    height: 25rem;
+    /* z-index: 4; */
+    position: relative;
+    bottom: 26.9rem;
+    left: 50rem;
+    padding: 3rem;
+    box-shadow: -0.4rem 0.4rem 0.7rem rgba(4, 81, 4, 5);
+}
+
+.signin1:hover{
+    transform: scale(1.05);
+    transition: 1.5s;
+}
+
+.heading{
+    font-family: 'Abril Fatface', cursive;
+    color: rgb(58, 33, 37);
+    /* color: white; */
+    margin: 0rem 4rem;
+    padding-bottom: 3rem;
+}
+
+.signup_text{
+    padding: 0.1rem 6rem;
+    font-family: 'Merienda', cursive;
+}
+
+.signup_button{
+    margin: 0.1rem 9rem;
+}
+
+.signup_input{
+    margin: 1rem 6rem;
+    /* padding: 0.4rem 0rem; */
+}
+.signin_text{
+    padding: 0.7rem 6rem;
+    font-family: 'Merienda', cursive;
+}
+
+.signin_input{
+    margin: 1rem 6rem;
+}
+.signin_button{
+    margin: 1rem 9rem;
+}
+.signin_button:hover{
+    color: red;
+}

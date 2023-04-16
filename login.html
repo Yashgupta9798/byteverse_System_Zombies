@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login in and regestration page</title>
+    <link rel="stylesheet" href="style_login.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form id="form">
+        <div class="signup1">
+            <h1 class="heading">SIGN UP OPTION</h1>
+            <div class="signup_text">NAME </div><input type="text" name="username" class="signup_input" id="username" required placeholder="Enter your name">
+            
+            <div class="signup_text">PASSWORD</div><input type="number" id="password1" class="signup_input" required placeholder="*********">
+            
+            
+            <div class="signup_text">CONFIRM PASSWORD</div><input type="password" id="password12" class="signup_input" required placeholder="*********">
+            <br>
+            <br>
+            <button onclick="myfunction()" class="signup_button">SIGN UP</button>
+            
+        </div>
+
+    </form>
+    <form class="form2">
+        <div class="signin1">
+            <h1 class="heading">SIGN IN OPTION</h1>
+            <div class="signin_text">USERNAME </div><input type="text" name="Username" class="signin_input" id="username" required placeholder="Enter your name">
+            <br>
+            <div class="signin_text">PASSWORD</div><input type="number" class="signin_input" id="password2" required placeholder="*********">
+            <br>
+            <br>
+            <button onclick="myfunction2()" class="signin_button">SIGN IN</button>
+        </div>
+    </form>
+    <script>
+        let cpuI = Math.floor(Math.random() * 45678)
+        let number=document.getElementById('password1')
+        
+        function myfunction() {
+            alert("You have successfully registered");
+            alert(`USE "${cpuI}" AS YOUR USERNAME`);
+            var variable = number.value;
+            alert( variable );
+            e.preventDefault();
+        }
+        // alert(variable)
+
+        function myfunction2() {
+            // alert("yash");
+            var number2 = document.getElementById('password2');
+            var variable2 = number2.value;
+            // alert(number.value)
+            alert(variable2);
+            alert(variable);
+            
+        }
+
+        // var variable;
+        // form.onsubmit = function sign_up() {
+        //     var variable = number.value;
+        //     alert( variable );
+        // }
+
+
+        // var variable2;
+        // var form2 = document.getElementById('form2');
+        // var number2 = document.getElementById('password2');
+        // form2.onsubmit = function sign_in() {
+        //     var variable2 = number2.value;
+        //     if(variable2 == variable){
+        //         alert("you have sucussfully logged in");
+        //     }
+        //     else{
+        //         alert("you have entered a wrong password");
+        //     }
+        // };
+        
+    </script>
+</body>
+<script src="script_login2.js"></script>
+</html>
